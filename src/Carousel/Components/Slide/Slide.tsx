@@ -1,5 +1,4 @@
 import React from "react";
-import Content from "../Content/Content";
 import './Slide.scss';
 
 export default function Slide(props:any) {
@@ -7,10 +6,10 @@ export default function Slide(props:any) {
     return (
         <div className="container">
             <div className="content">
-                <Content>Slide content</Content>
+                {children}
             </div>
             <div className="background">
-                <img src="Assets/img-1.jpg" alt="Image" className="background-image" />
+                <img src="Assets/img-1.jpg" alt="Banner" className="background-image" />
             </div>
         </div>
     );

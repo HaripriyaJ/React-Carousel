@@ -1,6 +1,6 @@
 .container {
     display: block;
-    height: 45vh;
+    height: inherit;
     width: inherit;
 }
 
@@ -9,6 +9,10 @@
     position: absolute;
     z-index: 1;
     color: #ffffff;
+    left: 10%;
+    top: 20%;
+    font-size: xx-large;
+    font-weight: bolder;
 }
 
 .background {

@@ -1,5 +1,25 @@
 #arrow {
+    position: relative;
+    width: inherit;
+    z-index: 1;
+}
+
+.arrow {
     cursor: pointer;
+    display: flex;
+    position: absolute;
+    top: 19vh;
+    height: 100px;
+    width: 70px;
+    align-items: center;
+    justify-content: center;
+
+    &-pos-left {
+        left: 10px;
+    }
+    &-pos-right {
+        right: 10px;
+    }
 }
 
 .left-arrow {

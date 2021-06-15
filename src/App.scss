@@ -1,10 +1,20 @@
 .carousel {
     display: block;
-    width: 99vw;
+    height: 50vh;
+    width: calc(100vw - 1rem);
     margin: 0 auto;
 
     & .container:not(:first-child) {
         position: absolute;
         top: 8px;
     }
+}
+
+.button-primary {
+    cursor: pointer;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
 }
