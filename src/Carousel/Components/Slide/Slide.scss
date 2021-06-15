@@ -1,0 +1,20 @@
+.container {
+    display: block;
+    height: 45vh;
+    width: inherit;
+}
+
+.content {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    color: #ffffff;
+}
+
+.background {
+    height: inherit;
+    &-image {
+        height: inherit;
+        width: 100%;
+    }
+}
