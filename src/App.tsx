@@ -4,6 +4,7 @@ import Carousel from './Carousel/Carousel';
 import Arrow from './Carousel/Components/Arrows/Arrow';
 import Content from './Carousel/Components/Content/Content';
 import Slide from './Carousel/Components/Slide/Slide';
+import Slider from './Carousel/Components/Slider/Slider';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             </Slide>
           )
         }
+        <Slider/>
       </Carousel>
       <Arrow side="left"/>
     </div>
