@@ -1,0 +1,17 @@
+#arrow {
+    cursor: pointer;
+}
+
+.left-arrow {
+    transform: rotate(180deg);
+    &:hover {
+        transform: rotate(180deg) translateX(3px);
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.right-arrow :hover {
+    width: 40px;
+    transform: translateX(3px);
+    transition: all 0.3s ease-in-out;
+}
