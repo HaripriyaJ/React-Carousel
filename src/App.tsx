@@ -16,7 +16,7 @@ function App() {
           <Arrow side="right"/>
           {
             carouselData.map(slide => 
-              <Slide bgImage={slide.url} key={slide.id}>
+              <Slide url={slide.url} key={slide.id} selected={!!slide?.selected}>
                 <Content>
                   <p>Sample Content</p>
                   <button className="button">Sample button</button>
