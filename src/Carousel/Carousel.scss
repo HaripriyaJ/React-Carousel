@@ -1,0 +1,50 @@
+.carousel {
+    display: block;
+    height: 50vh;
+    width: calc(100vw - 1rem);
+    margin: 0 auto;
+
+    & .container:not(:first-child) {
+        position: absolute;
+        top: 8px;
+    }
+
+    /* Styling arrow with respect to carousel */
+    & .arrow-pos-left:hover,
+    & .arrow-pos-right:hover {
+        background-color: #fff;
+        .left-arrow path,
+        .right-arrow path {
+            fill: #000;
+            fill-opacity: 1;
+        }
+    }
+
+    & .arrow-pos-left:hover {
+        border-radius: 0 50% 50% 0;
+        .left-arrow {
+            transform: rotate(180deg) translateX(3px);
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    & .arrow-pos-right:hover {
+        border-radius: 50% 0 0 50%;
+        .right-arrow path {
+            transform: translateX(3px);
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+
+.button-primary {
+    cursor: pointer;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+
+    &:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+    }
+}
