@@ -3,12 +3,12 @@ import { ISlide } from "../Interfaces/Slide";
 export const carouselData:ISlide[] = [
     {
         id:1,
-        url: 'https://i.pinimg.com/originals/81/53/26/815326e868ded5913128117951f4ee59.jpg',
+        url: 'https://images4.alphacoders.com/936/thumb-1920-936378.jpg',
+        selected: true
     },
     {
         id:2,
-        url: 'https://www.teahub.io/photos/full/308-3080271_nature-wallpaper-banner.jpg',
-        selected: true
+        url: 'https://www.teahub.io/photos/full/308-3080271_nature-wallpaper-banner.jpg'
     },
     {
         id:3,

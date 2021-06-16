@@ -10,7 +10,7 @@ export default function Arrow(props:IArrow) {
     return (
         <span 
             className={props.side === 'left' ? 'arrow arrow-pos-left' : 'arrow arrow-pos-right'} 
-            onClick={() => props.side === 'left' ? dispatch(showPrevious()) : dispatch(showNext())} 
+            onClick={() => props.side === 'left' ? dispatch(showPrevious('')) : dispatch(showNext(''))} 
             title={props.side === 'left' ? 'Previous' : 'Next'}
         >
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" viewBox="0 0 24 24" id="arrow" className={props.side === 'left' ? 'left-arrow': 'right-arrow'}>
