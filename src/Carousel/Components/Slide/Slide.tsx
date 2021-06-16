@@ -4,7 +4,6 @@ import './Slide.scss';
 
 export default function Slide(props:ISlide | any) {
     const { children, data } = props;
-    console.log(children)
     return (
         <div className="container" style={{display: data?.selected ? 'block' : 'none'}}>
             {data?.content ? <div className={`content content-${data?.contentSide || 'left'}`}> {children} </div> : null}
