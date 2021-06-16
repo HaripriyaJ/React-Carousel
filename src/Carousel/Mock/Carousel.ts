@@ -3,7 +3,8 @@ import { ISlide } from "../Interfaces/Slide";
 export const carouselData:ISlide[] = [
     {
         id:1,
-        url: 'https://i.pinimg.com/originals/81/53/26/815326e868ded5913128117951f4ee59.jpg'
+        url: 'https://i.pinimg.com/originals/81/53/26/815326e868ded5913128117951f4ee59.jpg',
+        selected: true
     },
     {
         id:2,
