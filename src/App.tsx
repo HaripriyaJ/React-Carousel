@@ -5,15 +5,18 @@ import Arrow from './Carousel/Components/Arrows/Arrow';
 import Content from './Carousel/Components/Content/Content';
 import Slide from './Carousel/Components/Slide/Slide';
 import Slider from './Carousel/Components/Slider/Slider';
-import { carouselData } from './Carousel/Mock/Carousel';
+import { ISlide } from './Carousel/Interfaces/Slide';
+import { useAppSelector } from './Store/Hooks';
 
 function App() {
+  const carouselData:ISlide[] = useAppSelector((state) => state.carousel.data);
+  
   return (
     <div>
       <div className="carousel">
         <Carousel>
-          <Arrow side="left"/>
-          <Arrow side="right"/>
+          <Arrow side="left" />
+          <Arrow side="right" />
           {
             carouselData.map(slide => 
               <Slide url={slide.url} key={slide.id} selected={!!slide?.selected}>

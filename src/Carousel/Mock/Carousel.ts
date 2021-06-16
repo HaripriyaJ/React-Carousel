@@ -4,11 +4,11 @@ export const carouselData:ISlide[] = [
     {
         id:1,
         url: 'https://i.pinimg.com/originals/81/53/26/815326e868ded5913128117951f4ee59.jpg',
-        selected: true
     },
     {
         id:2,
-        url: 'https://www.teahub.io/photos/full/308-3080271_nature-wallpaper-banner.jpg'
+        url: 'https://www.teahub.io/photos/full/308-3080271_nature-wallpaper-banner.jpg',
+        selected: true
     },
     {
         id:3,
