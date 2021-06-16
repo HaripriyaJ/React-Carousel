@@ -9,7 +9,7 @@ export default function Slide(props:any) {
                 {children}
             </div>
             <div className="background">
-                <img src="Assets/img-1.jpg" alt="Banner" className="background-image" />
+                <img src={props.bgImage} alt="Banner" className="background-image" />
             </div>
         </div>
     );

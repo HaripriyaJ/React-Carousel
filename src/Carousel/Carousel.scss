@@ -36,15 +36,3 @@
         }
     }
 }
-
-.button-primary {
-    cursor: pointer;
-    padding: 0.6rem 1rem;
-    border-radius: 5px;
-    outline: none;
-    border: none;
-
-    &:hover {
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
-    }
-}
