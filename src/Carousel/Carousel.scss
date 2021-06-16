@@ -4,6 +4,13 @@
     width: calc(100vw - 1rem);
     margin: 0 auto;
 
+    @media (max-width: 768px) {
+        height: 40vh;
+    }
+    @media (max-width: 425px) {
+        height: 30vh;
+    }
+
     & .container:not(:first-child) {
         position: absolute;
         top: 8px;

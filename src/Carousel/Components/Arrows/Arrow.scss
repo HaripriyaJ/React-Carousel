@@ -1,6 +1,12 @@
 #arrow {
     position: relative;
     width: inherit;
+    @media (max-width: 768px) {
+        height: 25px;
+    }
+    @media (max-width: 425px) {
+        height: 15px;
+    }
 }
 
 .arrow {
@@ -19,6 +25,15 @@
     }
     &-pos-right {
         right: 8px;
+    }
+
+    @media (max-width: 768px) {
+        top: 14vh;
+
+    }
+    @media (max-width: 425px) {
+        top: 8vh;
+        width: 35px;
     }
 }
 
