@@ -1,0 +1,10 @@
+.heading {
+    font-size: xx-large;
+    @media (max-width: 768px) {
+        font-size: x-large;
+    }
+}
+
+.body {
+    font-size: medium;
+}

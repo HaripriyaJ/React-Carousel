@@ -1,5 +1,12 @@
 $WHITE: #ffffff;
+$BLACK: #000000;
+
+$DARK_SHADOW: rgba(10, 10, 10, 0.541);
+$LIGHT_SHADOW: rgba(255, 255, 255, 0.541);
 
 :export {
     white: $WHITE;
+    black: $BLACK;
+    darkShadow: $DARK_SHADOW;
+    lightShadow:$LIGHT_SHADOW;
 }

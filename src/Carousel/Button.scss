@@ -1,3 +1,5 @@
+@import './Variables.scss';
+
 .button {
     cursor: pointer;
     padding: 0.6rem 1rem;
@@ -9,5 +11,29 @@
     }
     @media (max-width: 425px) {
         padding: 0.4rem 0.6rem;
+    }
+
+    &-primary {
+        color: $WHITE;
+        border: 1px solid $WHITE;
+        background-color: $DARK_SHADOW;
+        &:hover {
+            color: $BLACK;
+            font-weight: 500;
+            border: 1px solid $WHITE;
+            background-color: $LIGHT_SHADOW;
+        }
+    }
+
+    &-secondary {
+        color: $BLACK;
+        border: 1px solid $BLACK;
+        background-color: $LIGHT_SHADOW;
+        &:hover {
+            color: $WHITE;
+            font-weight: 500;
+            border: 1px solid $WHITE;
+            background-color: $DARK_SHADOW;
+        }
     }
 }

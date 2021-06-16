@@ -2,7 +2,7 @@ import React from 'react';
 import './App.scss';
 import Carousel from './Carousel/Carousel';
 import Arrow from './Carousel/Components/Arrows/Arrow';
-import Content from './Carousel/Components/Content/Content';
+import Content, { addBody, addButton, addHeading } from './Carousel/Components/Content/Content';
 import Slide from './Carousel/Components/Slide/Slide';
 import Slider from './Carousel/Components/Slider/Slider';
 import { ISlide } from './Carousel/Interfaces/Slide';
@@ -19,10 +19,11 @@ function App() {
           <Arrow side="right" />
           {
             carouselData.map(slide => 
-              <Slide url={slide.url} key={slide.id} selected={!!slide?.selected}>
+              <Slide key={slide.id} data={slide}>
                 <Content>
-                  <p>Sample Content</p>
-                  <button className="button">Sample button</button>
+                  {addHeading(slide?.content?.heading)}
+                  {addBody(slide?.content?.body)}
+                  {addButton(slide?.content?.buttonType, slide?.content?.buttonText, slide?.content?.buttonUrl)}
                 </Content>
               </Slide>
             )

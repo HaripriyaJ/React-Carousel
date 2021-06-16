@@ -3,14 +3,13 @@ import { ISlide } from "../../Interfaces/Slide";
 import './Slide.scss';
 
 export default function Slide(props:ISlide | any) {
-    const { children } = props;
+    const { children, data } = props;
+    console.log(children)
     return (
-        <div className="container" style={{display: props.selected ? 'block' : 'none'}}>
-            <div className="content">
-                {children}
-            </div>
+        <div className="container" style={{display: data?.selected ? 'block' : 'none'}}>
+            {data?.content ? <div className={`content content-${data?.contentSide || 'left'}`}> {children} </div> : null}
             <div className="background">
-                <img src={props.url} alt="Banner" className="background-image" />
+                <img src={data.url} alt="Banner" className="background-image" />
             </div>
         </div>
     );
